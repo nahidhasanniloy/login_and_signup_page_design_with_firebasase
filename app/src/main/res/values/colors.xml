@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+        <color name="btn_primary_color">#18206e</color>
+        <color name="Et_background">#F1F5FB</color>
+        <color name="stoke">#D0DAED</color>
+
+
+
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Fragment"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_primary_color"
+            android:text="Login Now "/>
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_primary_color"
+            android:text="@string/please_login_to_continue_using_app"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+            android:layout_marginTop="32dp"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background"
+            android:layout_marginTop="16sp"
+            android:ems="10"
+            android:textSize="16sp"
+            android:hint="Password "
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_background"
+            android:layout_marginTop="24dp"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/btn_Signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="14sp"
+            android:textColor="@color/btn_primary_color"
+            android:textAlignment="center"
+            android:text="@string/don_t_have_an_account_sign_up" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@drawable/fotter"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
